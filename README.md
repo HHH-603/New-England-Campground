@@ -1,2 +1,3 @@
 # New-England-Campground
-Campground business website designed with Gatsby.
+
+Campground business website, designed with Gatsby.
