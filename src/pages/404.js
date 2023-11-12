@@ -48,4 +48,4 @@ const ErrorPage = () => {
 
 export default ErrorPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Page Not Found</title>;
