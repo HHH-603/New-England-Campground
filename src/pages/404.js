@@ -1,49 +1,51 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
+const ErrorPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <body>
+      <header>
+        <nav>
+          <menu>
+            <li>
+              <Link className="link" to="/about">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/cabins">
+                Cabins
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/local">
+                Local Attractions
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/contact">
+                Contact Us
+              </Link>
+            </li>
+          </menu>
+        </nav>
+      </header>
+      <h1>New England Camp</h1>
+      <h2>Page Not Found</h2>
+      <p>This is not the page that you are looking for.</p>
+      <footer>
+        <ul>
+          <li>123 Main St, Smallville, NH 12345</li>
+          <li>(123) 456-7891</li>
+          <li>
+            <a href="mailto:github.unlocking468@passmail.net">info@nec.com</a>
+          </li>
+        </ul>
+      </footer>
+    </body>
+  );
+};
 
-export default NotFoundPage
+export default ErrorPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Home Page</title>;
