@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 const AboutPage = () => {
   return (
@@ -6,15 +7,31 @@ const AboutPage = () => {
       <header>
         <nav>
           <menu>
-            <li>About us</li>
-            <li>Cabins</li>
-            <li>Local attractions</li>
-            <li>Contact us</li>
+            <li>
+              <Link className="link" to="/about">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/cabins">
+                Cabins
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/local">
+                Local Attractions
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/contact">
+                Contact Us
+              </Link>
+            </li>
           </menu>
         </nav>
       </header>
       <h1>New England Camp</h1>
-      <h2>About us</h2>
+      <h2>About Us</h2>
       <p>
         On anno inkluzive plue, mano glota jes nv. Ia minca finnlando eko, ne
         fiksi konjunkcio iom. Dum ac inter fiksi, duona apuda esperantigita ont
@@ -42,4 +59,4 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-export const Head = () => <title>About us</title>;
+export const Head = () => <title>About Us</title>;

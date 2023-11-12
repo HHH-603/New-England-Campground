@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const IndexPage = () => {
+const CabinsPage = () => {
   return (
     <body>
       <header>
@@ -31,7 +31,7 @@ const IndexPage = () => {
         </nav>
       </header>
       <h1>New England Camp</h1>
-      <h2>Home</h2>
+      <h2>Cabins</h2>
       <p>
         On anno inkluzive plue, mano glota jes nv. Ia minca finnlando eko, ne
         fiksi konjunkcio iom. Dum ac inter fiksi, duona apuda esperantigita ont
@@ -57,6 +57,6 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default CabinsPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>About Us</title>;
